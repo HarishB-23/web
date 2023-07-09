@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>LifeLong Insurance Corp.</title>
+    <style>
+        body{
+            margin: 0;
+            
+        }
+        .header{
+            height: auto;
+            width: auto;
+            background-color: #023E8A;
+            display: flex;
+            flex-direction: row;   
+        }
+        h1{
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            color: #fff;
+        }
+       h2{
+        font-family: 'Courier New', Courier, monospace;
+        color: #fff;;
+       }
+        img
+        {
+            border-radius:50%;
+            border-color: #90E0EF;
+        }
+        main{
+            width: auto;
+            height: auto;
+            background-color: #0077B6;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        #main{width:600px; height:auto; overflow:hidden; padding-bottom:40px; margin-left:auto; margin-right:auto; 
+        border-radius:5px; padding-left:10px; margin-top:30px;  padding-top:40px;
+        }
+        
+        #main table{font-family:"Comic Sans MS", cursive;}
+        /* css code for textbox */
+        #main .tb{height:28px; width:230px; border:1px solid black; color:blue; font-weight:bold; border-left:5px solid #f7f7f7; opacity:0.9;}
+        
+        #main .tb:focus{height:28px; border:1px solid black; outline:none; border-left:5px solid #f7f7f7;}
+
+        /* css code for button*/
+        #main .btn{width:150px; height:32px; outline:none;  color:#f7f7f7; font-weight:bold; border:0px solid #f26724; 
+        text-shadow: 0px 0.5px 0.5px #fff; border-radius: 2px; font-weight: 600; color: orange; letter-spacing: 1px; 
+        font-size:14px; background-color:#f1f1f1; -webkit-transition: 1s; -moz-transition: 1s; transition: 1s;}
+    
+        #main .btn:hover{background-color:blue; outline:none;  border-radius: 2px; color:#f1f1f1; border:1px solid #f1f1f1;
+        -webkit-transition: 1s; -moz-transition: 1s; transition: 1s; }
+
+        .customerReg div{
+            background-color: #ADE8F4;
+            box-sizing: border-box;
+            border: 200px solid black;
+            box-shadow: #0077B6;
+        }
+        footer{
+            background-color: #3c3939;
+            box-sizing: border-box;
+        }
+        .contacts{
+            
+            width: auto;
+            height: auto;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: center;
+
+        }
+        .contacts div{
+            width: auto;
+            height: auto;
+            
+            
+        }  
+        h3{
+            color: #fff;
+            font-size: x-large;
+            font-family: 'Times New Roman', Times, serif;
+            text-decoration: underline orange;
+            margin-top: 0px;
+            
+        }
+        h4{
+            font-size: 20px;
+            color: #fff;
+            font-family: sans-pro, sans-serif;
+            font-weight: bold;
+            position: relative;
+            margin: 0;
+            
+        }
+        h5{
+            
+            color: #999;
+            font-size: 13px;
+        }
+    footer p{
+        margin-bottom: 0px;
+        color: #fff;
+        font-family: 'Times New Roman', Times, serif;
+    }
+    @media (max-width: 800px) {
+        .contacts{
+            flex-direction: column;
+        }
+        .contacts h4{
+            text-decoration: overline orange ;
+        }
+        }
+
+    </style>
+</head>
+<body>
+	<header class="header">
+        <div>
+        <img src="C:\Users\bhari\OneDrive\Desktop\InsuranceProject\US001\logo.png" alt="LifeLong Corporation Logo" width="150 cm" height="150 cm">
+    </div>
+    <div>
+        <h1 style="padding-left: 40px;">LifeLong Insurance Corporation</h1>
+        <h2 style="padding-left: 80px;" >Trust of Life</h2>
+    </div>
+    </header>
+
+<main>
+    <section class="CustomerReg">
+        <form action="C:\Users\bhari\OneDrive\Desktop\InsuranceProject\US001\customerReg.html">
+        <div id="main">
+            <div class="htag-">
+            <h2 style="text-decoration: underline;text-align: center;">Customer Registration Details</h2>
+            </div>
+            <div>
+                <h3 style="color: green;text-align: center;text-decoration: none;">Customer Registration Successful</h3>
+            </div>
+            <!-- create account div -->
+            <div class="login">
+            <table cellspacing="2" align="center" cellpadding="8" border="0">
+            <tr>
+            <td align="right">Name :</td>
+            <td></td>
+            </tr>
+            <tr>
+            <td align="right">Name :</td>
+            <td></td>
+            </tr>
+            <tr>
+            <td align="right">Email ID :</td>
+            <td></td>
+            </tr>
+                <td></td>
+            <td>
+            <input type="submit" value="login"  id="res" class="btn"   />
+            <input type="submit" value="Register" class="btn" /></td>
+            </tr>
+        
+            </table>
+
+            </div>
+            <!-- create account box ending here.. -->
+            </div>
+        </form>
+        
+    </section>
+</main>
+
+<footer class="footer">
+     <h3>Contact Us</h3>
+
+	 <section class="contacts">
+       
+		<div>
+		<h4>Bangalore Main Office</h4>
+		<h5>Phone: +91 9876543210</h5>
+		<h5>Email: LifeLong@crop.in</h5>
+	</div>
+	<div>
+		<h4>Chennai Branch Office</h4>
+		<h5>Phone: +91 9473848372</h5>
+	    <h5>Email: LifeLong.Chennai@crop.in</h5>
+	</div>
+	<div>
+		<h4>Mumbai Branch Office</h4>
+		<h5>Phone: +91 8562465583</h5>
+	    <h5>Email: LifeLong.Mumbai@crop.in</h5>
+	</div>
+	
+	 </section>
+	<p>Copyright &copy; 2020 LifeLong Insurance Corporation</p>
+</footer>
+
+</body>
+</html>
