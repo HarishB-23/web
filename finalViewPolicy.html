@@ -39,25 +39,6 @@
             align-items: center;
             
         }
-
-            #main{width:600px; height:auto; overflow:hidden; padding-bottom:20px; margin-left:auto; margin-right:auto; 
-            border-radius:5px; padding-left:10px; margin-top:30px;  padding-top:20px;
-            }
-            
-            #main table{font-family:"Comic Sans MS", cursive;}
-            /* css code for textbox */
-            #main .tb{height:28px; width:230px; border:1px solid black; color:blue; font-weight:bold; border-left:5px solid #f7f7f7; opacity:0.9;}
-            
-            #main .tb:focus{height:28px; border:1px solid black; outline:none; border-left:5px solid #f7f7f7;}
-
-            /* css code for button*/
-            #main .btn{width:150px; height:32px; outline:none;  color:#f7f7f7; font-weight:bold; border:0px solid #f26724; 
-            text-shadow: 0px 0.5px 0.5px #fff; border-radius: 2px; font-weight: 600; color: orange; letter-spacing: 1px; 
-            font-size:14px; background-color:#f1f1f1; -webkit-transition: 1s; -moz-transition: 1s; transition: 1s;}
-        
-            #main .btn:hover{background-color:blue; outline:none;  border-radius: 2px; color:#f1f1f1; border:1px solid #f1f1f1;
-            -webkit-transition: 1s; -moz-transition: 1s; transition: 1s; }
-
         .customerReg div{
             background-color: #ADE8F4;
             box-sizing: border-box;
@@ -119,13 +100,47 @@
             text-decoration: overline orange ;
         }
         }
+        table{
+           
+        }
+        table,td{
+            
+            border-collapse: collapse;
+            border: 2px solid black;
+        }
+        th{
+            border: 4px solid black;
+            background-color: aqua;
+        }
+        .pagination {
+  display: inline-block;
+}
+
+.pagination a {
+  color: black;
+  float: left;
+  
+  text-decoration: none;
+  transition: background-color .3s;
+  border: 1px solid #0077B6;
+  
+}
+
+.pagination a.active {
+  background-color: #4CAF50;
+  color: white;
+  border: 1px solid #4CAF50;
+}
+
+.pagination a:hover:not(.active) {background-color: #ddd;}
+ 
 
     </style>
 </head>
 <body>
 	<header class="header">
         <div>
-        <img src="C:\Users\bhari\OneDrive\Desktop\InsuranceProject\US002\logo.png" alt="LifeLong Corporation Logo" width="150 cm" height="150 cm">
+        <img src="C:\Users\bhari\OneDrive\Desktop\InsuranceProject\US001\logo.png" alt="LifeLong Corporation Logo" width="150 cm" height="150 cm">
     </div>
     <div>
         <h1 style="padding-left: 40px;">LifeLong Insurance Corporation</h1>
@@ -135,58 +150,57 @@
 
 <main>
     <section class="CustomerReg">
-        <form action="C:\Users\bhari\OneDrive\Desktop\InsuranceProject\US001\regConfirm.html">
-            <!-- Main div code -->
+        <section class="CustomerReg" style="padding-bottom: 70px;">
             <div id="main">
-            <div class="htag-">
-            <h2 style="text-decoration: underline;text-align: center;">Choose Your Policy</h2>
-            </div>
-            <!-- create account div -->
-            <div class="login">
-            <table cellspacing="2" align="center" cellpadding="8" border="0">
+                <div class="htag-">
+                <h2 style="text-align: center;text-decoration: underline; padding-top: 40px;
+                padding-bottom: 10px;">Your Policy</h2>
+                </div>
+            <table cellspacing="4" align="center" cellpadding="8" style="">
+                <thead>
+                    
+                        <th> Policy No.</th>
+                        <th> Commence Date</th>
+                        <th> Status</th>
+                        <th> Policy Title</th>
+                        <th> Premium Amount</th>
+                        <th> Next Due Date</th>
+                    
+                </thead>
+                <tr>
+                    <td>42345</td>
+                    <td>01/12/2023</td>
+                    <td>Active</td>
+                    <td>Bhima Health</td>
+                    <td>10000</td>
+                    <td>01/12/2024</td>
+                </tr>
+            </thead>
             <tr>
-            <td align="right" id="policy">Policy Type :</td>
-            <td><select name="policy" id="Ins">
-                    <option value="">--Please choose an option--</option>
-                    <option value="gi">General Insurance</option>
-                    <option value="hi">Health Insurance</option>
-                    <option value="mi">Motor INsurance</option>
-                </select></td>
+                <td>42765</td>
+                <td>01/08/2023</td>
+                <td>Active</td>
+                <td>Gima Health</td>
+                <td>1000</td>
+                <td>01/02/2024</td>
             </tr>
             <tr>
-            <td align="right">Policy Name :</td>
-            <td><select name="policy" id="Ins">
-                <option value="">--Please choose an option--</option>
-                <option value="gi">General Insurance</option>
-                <option value="hi">Health Insurance</option>
-                <option value="mi">Motor INsurance</option>
-            </select></td>
-            </tr>
-            <tr>
-            <td align="right">Sum Assured(rs) :</td>
-            <td><input type="password"  id="t3" class="tb" readonly/></td>
-            </tr>
-             <tr>
-            <td align="right">Premium Amount(rs) :</td>
-            <td><input type="text"   id="t5" class="tb" readonly /></td>
-            </tr>
-            tr>
-            <td align="right">Policy Term(yr) :</td>
-            <td><input type="text"  id="t5" class="tb"  readonly/></td>
+                <td>42181</td>
+                <td>01/09/2023</td>
+                <td>Active</td>
+                <td>Motor Health</td>
+                <td>10000</td>
+                <td>01/12/2024</td>
             </tr>
             
-                <td></td>
-            <td>
-            <input type="submit" value="Confirm" onclick="clearFunc()" id="res" class="btn" />
-            <input type="submit" value="View Policy" class="btn" onclick="registration()" /></td>
-            </tr>
+           
+        </div >
+            
             </table>
-            </div>
-            <!-- create account box ending here.. -->
-            </div>
-        </form>
-        
-    </section>
+        </section>
+        <div class="pagination" style="padding-bottom: 30px;">
+            <a href="C:\Users\bhari\OneDrive\Desktop\InsuranceProject\US003\viewPolicy.html" style="font-size: larger;">❮❮Previous</a>
+          </div>
 </main>
 
 <footer class="footer">
